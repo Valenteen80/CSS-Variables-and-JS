@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoped CSS Variables and JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2 class="h2">ФОТАФіЛЬТРЫ</h2>
+      <div class="function-container">
+        <div class="controls">
+          <div class="settings-container">
+            <label class="h2" for="size-foto">Памеры фота:</label>
+            <input
+              id="size-foto"
+              type="range"
+              name="size-foto"
+              min="200"
+              max="700"
+              value="700"
+              data-sizing="px"
+            />
+          </div>
+          <div class="settings-container">
+            <label class="h2" for="spacing">Рамка:</label>
+            <input
+              id="spacing"
+              type="range"
+              name="spacing"
+              min="10"
+              max="50"
+              value="10"
+              data-sizing="px"
+            />
+          </div>
+          <div class="settings-container">
+            <label class="h2" for="blur">Размыццё:</label>
+            <input
+              id="blur"
+              type="range"
+              name="blur"
+              min="0"
+              max="25"
+              value="0"
+              data-sizing="px"
+            />
+          </div>
+          <div class="settings-container">
+            <label class="h2" for="saturate">Насычанасьць:</label>
+            <input
+              id="saturate"
+              type="range"
+              name="saturate"
+              min="0"
+              max="100"
+              value="100"
+              data-sizing="%"
+            />
+          </div>
+          <div class="settings-container">
+            <label class="h2" for="invert">Інверсія:</label>
+            <input
+              class="input"
+              id="invert"
+              type="range"
+              color="#ff0000"
+              name="invert"
+              min="0"
+              max="100"
+              value="0"
+              data-sizing="%"
+            />
+          </div>
+          <div class="settings-container">
+            <label class="h2" for="base">Колер</label>
+            <input id="base" type="color" name="base" value="#ff0000" />
+          </div>
+          <div class="settings-container">
+            <label class="h2" for="background">Колер фону</label>
+            <input
+              id="background"
+              type="color"
+              name="background"
+              value="#ffffff"
+            />
+          </div>
+        </div>
+        <img src="7735.jpg" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
